@@ -13,8 +13,8 @@ theme = "reliqtheme"
   dateformNumTime = "2006-01-02 15:04"
   
   # Metadata
-  description = "Reliq Labs | Handcrafted Web Solutions"
-  keywords = "web development, design, digital agency, seo, search engine optimisation, web design, front end, design"
+  description = "Reliq Labs | Architecting end-to-end custom software, secure AI systems, and high-performance data pipelines for modern businesses."
+  keywords = "software engineering, custom software solutions, AI development, backend architecture, data systems, technology consulting, system optimization, machine learning"
   images = [""]
   
   # Plausible Analytics
@@ -55,7 +55,8 @@ theme = "reliqtheme"
     weight = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
-    subtitle = "Handcrafted Web Solutions"
+  subtitle = "Intelligent Software Solutions"
+
 
 [menu]
   [[menu.main]]

@@ -1,11 +1,11 @@
 {
-  "name": "Reliq Studios",
-  "short_name": "Reliq",
-  "description": "Handcrafted Solutions. Built to Last.",
+  "name": "Reliq Labs",
+  "short_name": "Reliq Labs",
+  "description": "Custom software, advanced AI, and robust backend architecture engineered to perform.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbf1c7",
-  "theme_color": "#3c3836",
+  "background_color": "#282828",
+  "theme_color": "#282828",
   "icons": [
     {
       "src": "/apple-touch-icon.png",

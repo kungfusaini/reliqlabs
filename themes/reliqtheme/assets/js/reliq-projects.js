@@ -1165,7 +1165,7 @@ if (isFullscreen) {
       if (projects.length === 0) {
         const empty = document.createElement('p');
         empty.className = 'rp-empty';
-        empty.textContent = 'No projects found.';
+        empty.textContent = 'Portfolio coming soon.';
         empty.style.textAlign = 'center';
         empty.style.padding = '40px';
         empty.style.color = theme.colorSecondary;
