@@ -2,4 +2,4 @@ FROM hugomods/hugo:latest AS builder
 WORKDIR /src
 COPY . .
 EXPOSE 1314
-CMD ["hugo", "server", "--bind", "0.0.0.0", "--port", "1314", "--baseURL", "reliqstudios.localhost", "--environment", "development", "--watch", "--buildDrafts", "--buildFuture"]
+CMD ["hugo", "server", "--bind", "0.0.0.0", "--port", "1314", "--baseURL", "reliqlabs.localhost", "--environment", "development", "--watch", "--buildDrafts", "--buildFuture"]

@@ -2,7 +2,7 @@ FROM hugomods/hugo:latest AS builder
 WORKDIR /src
 COPY . .
 ENV HUGO_ENV=production
-RUN hugo --minify --baseURL "https://reliqstudios.com/"
+RUN hugo --minify --baseURL "https://reliqlabs.com/"
 
 FROM nginx:alpine
 COPY --from=builder /src/public /usr/share/nginx/html
