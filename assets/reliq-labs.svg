@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="3870"
+   height="1935"
+   viewBox="0 0 3870 1935"
+   sodipodi:docname="reliq-labs.svg"
+   inkscape:export-filename="reliq-labs.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#3c3836"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="3870"
+       height="1935"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="1935"
+       y="506.14584"
+       width="2848.75"
+       height="1254.1667"
+       id="rect1" />
+    <rect
+       x="2582.1475"
+       y="1519.6178"
+       width="789.88049"
+       height="425.01184"
+       id="rect2-2" />
+  </defs>
+  <g
+     id="g1">
+    <path
+       id="path3-3"
+       style="fill:#fbf1c7;fill-opacity:1;stroke:#fbf1c7;stroke-width:1.1963;stroke-opacity:1"
+       d="m 892.24036,140.5509 c -24.41524,0 -48.83072,5.56267 -67.68338,16.68866 -131.77415,77.76699 -421.315,244.93466 -554.55079,320.17114 -38.12361,21.52794 -68.10306,73.45219 -67.68499,117.23182 1.46096,153.00332 1.46096,487.33708 0,640.34078 -0.41807,43.7799 29.56009,95.704 67.68337,117.2318 133.23544,75.2362 422.7779,242.4024 554.55241,320.1695 37.70557,22.2519 97.66151,22.2519 135.36708,0 59.58584,-35.1647 151.42934,-88.6084 246.49344,-143.5666 l -339.87518,-427.7081 -43.97424,42.0608 v 200.7471 H 644.76415 V 481.66096 h 191.18787 l 420.61218,288.69407 -267.66294,223.6901 374.01554,444.61667 c 58.8033,-33.7467 112.0515,-64.1379 151.558,-86.4467 38.1237,-21.5278 68.1015,-73.4521 67.6833,-117.2318 -1.4613,-153.0034 -1.4613,-487.3371 0,-640.34078 0.4182,-43.77989 -29.56,-95.70401 -67.6833,-117.23182 C 1381.2393,402.1744 1091.6985,235.00835 959.92406,157.24119 941.07118,146.1152 916.65594,140.551 892.24036,140.5509 Z m -73.496,511.26699 v 275.31154 l 175.8925,-145.30375 z" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-weight:bold;font-size:361.851px;line-height:0px;font-family:'Cormorant Unicase';-inkscape-font-specification:'Cormorant Unicase,  Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#fbf1c7;fill-opacity:1;stroke:#fbf1c7;stroke-opacity:1"
+       transform="matrix(1.9994032,0,0,1.8191428,-2204.4682,88.605153)"><tspan
+         x="1935"
+         y="601.31539"
+         id="tspan5"><tspan
+           style="font-weight:500;font-family:Futura;-inkscape-font-specification:'Futura Medium'"
+           id="tspan1">RELIQ</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2-4"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:251.729px;line-height:0px;font-family:Futura;-inkscape-font-specification:'Futura Medium';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2-2);display:inline;fill:#fbf1c7;fill-opacity:1;stroke:#fbf1c7;stroke-opacity:1"
+       transform="matrix(1.3241745,0,0,1.3241745,-372.82894,-517.23375)"><tspan
+         x="2582.1484"
+         y="1585.1846"
+         id="tspan6">labs</tspan></text>
+  </g>
+</svg>

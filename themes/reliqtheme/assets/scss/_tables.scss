@@ -1,0 +1,29 @@
+.post-content {
+  table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: $text-sm;
+    min-width: 400px;
+    max-width: 100%;
+
+    th,
+    td {
+      padding: 12px 15px;
+      border: 1px solid $table-color;
+    }
+
+    thead {
+      tr {
+        text-align: left;
+        background-color: $table-color;
+        color: $color;
+      }
+    }
+
+    tbody {
+      tr {
+        border: 1px solid $table-color;
+      }
+    }
+  }
+}

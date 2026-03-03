@@ -1,0 +1,10 @@
+FROM hugomods/hugo:latest AS builder
+WORKDIR /src
+COPY . .
+ENV HUGO_ENV=production
+RUN hugo --minify --baseURL "https://reliqstudios.com/"
+
+FROM nginx:alpine
+COPY --from=builder /src/public /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80

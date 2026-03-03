@@ -1,0 +1,83 @@
+baseURL = "https://reliqlabs.com"
+title = "Reliq Labs"
+languageCode = "en-us"
+theme = "reliqtheme"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  
+  # Metadata
+  description = "Reliq Labs | Handcrafted Web Solutions"
+  keywords = "web development, design, digital agency, seo, search engine optimisation, web design, front end, design"
+  images = [""]
+  
+  # Plausible Analytics
+  plausibleDataDomain = "reliqlabs.com"
+  plausibleScriptSource = "/stats/js/script.outbound-links.pageview-props.tagged-events.js"
+  
+  # Features
+  enableThemeToggle = false
+  enableSharingButtons = true
+  enableReadingTime = true
+  
+  [params.author]
+    name = "Reliq Labs Team"
+
+  [params.Logo]
+    path = "/reliq-labs.png"
+    alt = "Reliq Labs Logo"
+    logoHomeLink = "/"
+
+  [params.favicon]
+    mask = "#282828"
+    msapplication = "#282828"
+    
+  [params.footer]
+    trademark = 2025
+    rss = false
+    copyright = false
+    author = false
+    bottomText = ["Reliq Labs"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[languages]
+  [languages.en]
+    weight = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  [languages.en.params]
+    subtitle = "Handcrafted Web Solutions"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    weight = 1
+    url = "#about"
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    weight = 2
+    url = "#projects"
+  
+  [[menu.main]]
+    identifier = "services"
+    name = "services"
+    weight = 3
+    url = "#services"
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    weight = 4
+    url = "#contact"

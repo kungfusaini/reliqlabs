@@ -1,0 +1,122 @@
+{
+  "particles": {
+    
+    "color": "#ebdbb2",
+    "start_scrambled": false,
+    "responsive": {
+      "enabled": true,
+      "size": {
+        "value": 3,
+        "random": false,
+        "min_size": 1,
+        "max_size": 10,
+        "scale_factor": 0.0005,
+        "base_viewport": 600
+      },
+      "density": {
+        "base_density": 50,
+        "min_density": 50,
+        "max_density": 50,
+        "scale_factor": 0.08,
+        "base_viewport": 600
+      }
+    },
+    "movement": {
+      "speed": 10,
+      "restless": {
+        "enabled": true,
+        "value": 1000
+      },
+      "floating": {
+        "enabled": true,
+        "amplitude": 8,
+        "frequency": 0.25,
+        "phase_offset": 0
+      }
+    },
+    "scatter": {
+      "force": 10
+    },
+    "fade_out": {
+      "enabled": true,
+      "duration_ms": 1000
+    },
+    "interactivity": {
+      "on_hover": {
+        "enabled": true,
+        "action": "repulse"
+      },
+      "on_click": {
+        "enabled": false,
+        "action": "big_repulse"
+      },
+      "on_touch": {
+        "enabled": true,
+        "action": "repulse"
+      }
+    }
+  },
+  "image": {
+    "src": {
+      "path": null,
+      "is_external": false
+    },
+    "animation": {
+      "enabled": false,
+      "frames": [],
+      "frame_duration_ms": 150,
+      "loop": false,
+      "auto_start": false
+    },
+    "position": {
+      "x_img_pct": -15,
+      "y_img_pct": -15
+    },
+    "size": {
+      "canvas_pct": 50,
+      "min_px": 350,
+      "max_px": 2000
+    }
+  },
+  "interactions": {
+    "repulse": {
+      "detection_radius": 40,
+      "max_displacement": 0.5,
+      "repulse_duration": 0.1,
+      "force_curve": "linear"
+    },
+    "big_repulse": {
+      "distance": 100,
+      "strength": 500
+    },
+    "grab": {
+      "distance": 100,
+      "line_width": 1
+    }
+  },
+
+  "secondary_particles": {
+    "enabled": true,
+    "placement_mode": "full_canvas",
+    "particle_multiplier": 0.1,
+    "color": "#504945",
+    "render_order": "background",
+    "movement": {
+      "random": {
+        "enabled": true,
+        "speed": 0.3
+      }
+    },
+    "interactivity": {
+      "enabled": true,
+      "on_touch": {
+        "enabled": true,
+        "action": "repulse"
+      },
+      "touch_sensitivity": 0.3,
+      "touch_max_offset": 1.0
+    }
+  },
+
+  "disabled": false
+}

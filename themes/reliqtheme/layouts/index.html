@@ -1,0 +1,113 @@
+{{ define "main" }}
+    <div class="single-page-content">
+        <section id="hero">
+            <div class="content-center">
+                <h1><span class="h1-line">Intelligent Solutions<span class="h1-period">.</span></span> <span class="h1-line">Built to Last<span class="h1-period">.</span></span></h1>
+                <h2>{{ .Params.hero.tagline }}</h2>
+                <div class="hero-links">
+                    <a href="#projects" class="hero-link">Explore Our Work <span class="hero-arrow">↘</span></a>
+                    <a href="#contact" class="hero-link">Book a Free Consultation <span class="hero-arrow">↘</span></a>
+                </div>
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Discover</span>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="section-content">
+                <h2>About</h2>
+                <div class="placeholder-content">
+                    <p>At Reliq Labs, we specialize in custom software and AI designed to perform. From building full platforms from the ground up, to providing targeted contract work on complex existing code, we architect the digital infrastructure that drives your business forward.</p>
+                    <div class="about-links">
+                        <a href="#projects" class="hero-link">Explore Our Work <span class="hero-arrow">↘</span></a>
+                        <a href="#contact" class="hero-link">Book a Free Consultation <span class="hero-arrow">↘</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div class="placeholder-content">
+                    <p>From enterprise infrastructure to bleeding-edge AI—explore the work.</p>
+                    <div id="reliq-projects"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="page-section">
+            <div class="section-content">
+                <h2>Services</h2>
+                <div class="placeholder-content">
+                    <p>Technical expertise to power your infrastructure.</p>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <h3>AI & Machine Learning</h3>
+                            <p>Training, fine-tuning, evaluation, and red-teaming. Models built to perform under pressure.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Backend Engineering</h3>
+                            <p>APIs, databases, and scalable architecture designed for reliability and performance.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Data Engineering</h3>
+                            <p>ETL pipelines, real-time feed handlers, and data systems that move fast without breaking.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Custom Solutions</h3>
+                            <p>Complex problems require tailored approaches. We build what others can't.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="section-content">
+                <h2>Contact</h2>
+                <div class="placeholder-content">
+                    <p>Ready to start your next project?</p>
+                    <p>Book your free consultation.</p>
+                    <p>Email us at <a href="mailto:hi@reliqlabs.com" class="hero-link">hi@reliqlabs.com</a> or use the form below.</p>
+                    <form id="contactForm" class="contact-form">
+                        <input 
+                            type="text" 
+                            id="contact-name" 
+                            name="name" 
+                            required
+                            autocomplete="name"
+                            placeholder="Name"
+                        />
+                        <input 
+                            type="email" 
+                            id="contact-email" 
+                            name="email" 
+                            required
+                            autocomplete="email"
+                            placeholder="Email"
+                        />
+                        <textarea 
+                            id="contact-message" 
+                            name="message" 
+                            required
+                            autocomplete="off"
+                            rows="5"
+                            placeholder="Your message..."
+                        ></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div id="result" class="contact-result" role="alert" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            ReliqProjects('#reliq-projects').fetch();
+        });
+    </script>
+{{ end }}

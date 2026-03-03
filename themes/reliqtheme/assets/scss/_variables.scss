@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Color scheme - Gruvbox Dark */
+$background: #282828;
+$background-secondary: #3c3836;
+$background-header: #282828;
+$color: #fbf1c7;
+$color-variant: #ebdbb2;
+$color-secondary: #a89984;
+$border-color: #504945;
+$table-color: #504945;
+
+$media-size-phone: "(max-width: 684px)";
+$media-size-tablet: "(max-width: 900px)";
+
+/* Variables for js, must be the same as these in @custom-media queries */
+:root {
+  --phoneWidth: (max-width: 684px);
+  --tabletWidth: (max-width: 900px);
+}
+
+/* Content */
+$max-width: 860px;
+
+/* Fluid Typography */
+$text-base: 1rem;
+$text-sm: clamp(0.7rem, calc(0.65rem + 0.25vw), 0.85rem);
+$text-md: clamp(0.85rem, calc(0.8rem + 0.3vw), 1.25rem);
+$text-lg: clamp(0.9rem, calc(0.85rem + 0.5vw), 1.75rem);
+$text-display: clamp(1rem, calc(0.9rem + 0.8vw), 2.5rem);

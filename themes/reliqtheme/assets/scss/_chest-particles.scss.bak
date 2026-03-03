@@ -1,0 +1,33 @@
+// Chest/Sprite container and image styles (simplified)
+.chest-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: clamp(1rem, 4vw, 3rem) 0; // Fluid margins
+  position: relative; // Needed for canvas overlay
+}
+
+.chest-image {
+  // JavaScript sets width dynamically once at initialization
+  height: auto;
+  max-width: none; // Prevent scaling from global img rule
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  display: block; // Ensure proper positioning
+  visibility: hidden; // Hide the image, but particles will show its shape
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Particle canvas overlay (image particles)
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  transform: translateX(var(--sprite-offset-x)) translateY(var(--sprite-offset-y)); // Sprite offset for centering
+}

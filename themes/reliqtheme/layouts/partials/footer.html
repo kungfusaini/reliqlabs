@@ -1,0 +1,10 @@
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            {{ if .Site.Params.footer.trademark }}<span>{{ .Site.Params.footer.trademark }}</span>{{ end }}
+            {{ with .Site.Params.footer.bottomText }}
+                {{ range . }}<span> · {{ . | safeHTML }}</span>{{ end }}
+            {{ end }}
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="header__inner">
+        {{ partial "logo.html" . }}
+        
+        {{- if .Site.Menus }}
+            <nav class="header__nav">
+                {{- $currentPage := . -}}
+                {{ range sort .Site.Menus.main ".Weight" -}}
+                    {{ if not .HasChildren }}
+                        <a href="{{ .URL | relLangURL }}" class="nav-link scroll-link" data-section="{{ .Identifier }}">{{ .Name }}</a>
+                    {{ end }}
+                {{- end }}
+
+                {{ if .Site.Params.EnableThemeToggle }}
+                    <span class="theme-toggle not-selectable">{{ partial "theme-toggle-icon.html" . }}</span>
+                {{- end }}
+            </nav>
+        {{- end }}
+    </div>
+</header>
