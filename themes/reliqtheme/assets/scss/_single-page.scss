@@ -61,7 +61,7 @@
   text-align: center;
   
   h2 {
-    font-size: clamp(1.75rem, 2.5vw, 2.75rem);
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
     margin-bottom: 2rem;
     color: $color-variant;
     position: relative;
@@ -272,7 +272,7 @@
     max-width: 100%;
     
     h2 {
-      font-size: 2.2rem;
+      font-size: 1.5rem;
     }
   }
   
@@ -290,11 +290,5 @@
 @media #{$media-size-tablet} {
   .page-section {
     padding: 5rem 1.5rem;
-  }
-
-  .section-content {
-    h2 {
-      font-size: 2.5rem;
-    }
   }
 }
