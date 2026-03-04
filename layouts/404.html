@@ -1,0 +1,52 @@
+{{ define "main" }}
+<style>
+    .error-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #282828;
+        font-family: 'Google Sans Code', monospace;
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .error-code {
+        font-size: clamp(80px, 20vw, 200px);
+        font-weight: 500;
+        color: #fbf1c7;
+        line-height: 1;
+    }
+
+    .error-message {
+        font-size: clamp(18px, 4vw, 32px);
+        font-weight: 400;
+        color: #ebdbb2;
+        text-align: center;
+    }
+
+    .home-link {
+        display: inline-block;
+        font-size: clamp(14px, 2vw, 18px);
+        font-weight: 500;
+        color: #282828;
+        background-color: #ebdbb2;
+        text-decoration: none;
+        padding: 14px 32px;
+        border-radius: 8px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .home-link:hover {
+        transform: translateY(-2px);
+        background-color: #fbf1c7;
+    }
+</style>
+
+<div class="error-page">
+    <span class="error-code">404</span>
+    <span class="error-message">Page Not Found</span>
+    <a href="{{ .Site.BaseURL }}" class="home-link">Go Home</a>
+</div>
+{{ end }}
