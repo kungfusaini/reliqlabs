@@ -6,11 +6,11 @@ theme = "reliqtheme"
 [pagination]
   pagerSize = 10
 
-# Sitemap Configuration
-[sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+# Sitemap Configuration (disabled - manual sitemap in static folder)
+# [sitemap]
+#   changefreq = "weekly"
+#   filename = "sitemap.xml"
+#   priority = 0.5
 
 [params]
   dateform = "Jan 2, 2006"
