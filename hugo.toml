@@ -6,6 +6,12 @@ theme = "reliqtheme"
 [pagination]
   pagerSize = 10
 
+# Sitemap Configuration
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 [params]
   dateform = "Jan 2, 2006"
   dateformShort = "Jan 2"
@@ -15,7 +21,7 @@ theme = "reliqtheme"
   # Metadata
   description = "Reliq Labs | Architecting end-to-end custom software, secure AI systems, and high-performance data pipelines for modern businesses."
   keywords = "software engineering, custom software solutions, AI development, backend architecture, data systems, technology consulting, system optimization, machine learning"
-  images = [""]
+  images = ["/reliq-labs.png"]
   
   # Plausible Analytics
   plausibleDataDomain = "reliqlabs.com"

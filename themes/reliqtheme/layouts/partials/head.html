@@ -43,6 +43,29 @@
 {{- partial "favicons.html" . }}
 
 {{ template "_internal/schema.html" . }}
+
+<!-- Custom Organization JSON-LD Schema -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}{{ .Site.Params.Logo.path }}",
+  "description": "{{ .Site.Params.description }}",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Reliq",
+    "url": "https://reliq.digital"
+  },
+  "sameAs": [
+    "https://reliq.digital"
+  ]
+}
+</script>
+{{ end }}
+
 {{ template "_internal/twitter_cards.html" . }}
 
 {{ if isset .Site.Taxonomies "series" }}
