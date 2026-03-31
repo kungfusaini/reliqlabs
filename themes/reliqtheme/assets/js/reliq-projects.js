@@ -238,6 +238,10 @@
       centerControls.style.gap = '20px';
       centerControls.style.flex = '1';
 
+      // Calculate total slides - hide arrows/counter if only 1
+      const totalSlides = Math.max(currentImages.length, currentVideos.length);
+      const showNavControls = totalSlides > 1;
+
       const prevBtn = document.createElement('button');
       prevBtn.className = 'rp-carousel-prev rp-nav-btn';
       prevBtn.innerHTML = '&#10094;';
@@ -246,6 +250,7 @@
       prevBtn.style.border = 'none';
       prevBtn.style.padding = '10px 20px';
       prevBtn.style.cursor = 'pointer';
+      if (!showNavControls) prevBtn.style.display = 'none';
       prevBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         showSlide(currentSlideIndex - 1);
@@ -258,6 +263,7 @@
       slideCounter.style.color = theme.colorVariant;
       slideCounter.style.fontSize = '0.95rem';
       slideCounter.style.padding = '0 10px';
+      if (!showNavControls) slideCounter.style.display = 'none';
       centerControls.appendChild(slideCounter);
 
       const nextBtn = document.createElement('button');
@@ -268,6 +274,7 @@
       nextBtn.style.border = 'none';
       nextBtn.style.padding = '10px 20px';
       nextBtn.style.cursor = 'pointer';
+      if (!showNavControls) nextBtn.style.display = 'none';
       nextBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         showSlide(currentSlideIndex + 1);
@@ -533,8 +540,8 @@
         titleText.textContent = project.title;
         title.appendChild(titleText);
         
-        // Add link icon if project has a link
-        if (project.link) {
+        // Add link icon if project has a valid link
+        if (project.link && project.link !== 'none' && project.link.trim() !== '') {
           const linkIcon = document.createElement('a');
           linkIcon.href = project.link;
           linkIcon.target = '_blank';
