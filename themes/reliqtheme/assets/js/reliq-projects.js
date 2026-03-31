@@ -238,10 +238,6 @@
       centerControls.style.gap = '20px';
       centerControls.style.flex = '1';
 
-      // Calculate total slides - hide arrows/counter if only 1
-      const totalSlides = Math.max(currentImages.length, currentVideos.length);
-      const showNavControls = totalSlides > 1;
-
       const prevBtn = document.createElement('button');
       prevBtn.className = 'rp-carousel-prev rp-nav-btn';
       prevBtn.innerHTML = '&#10094;';
@@ -250,7 +246,6 @@
       prevBtn.style.border = 'none';
       prevBtn.style.padding = '10px 20px';
       prevBtn.style.cursor = 'pointer';
-      if (!showNavControls) prevBtn.style.display = 'none';
       prevBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         showSlide(currentSlideIndex - 1);
@@ -263,7 +258,6 @@
       slideCounter.style.color = theme.colorVariant;
       slideCounter.style.fontSize = '0.95rem';
       slideCounter.style.padding = '0 10px';
-      if (!showNavControls) slideCounter.style.display = 'none';
       centerControls.appendChild(slideCounter);
 
       const nextBtn = document.createElement('button');
@@ -274,7 +268,6 @@
       nextBtn.style.border = 'none';
       nextBtn.style.padding = '10px 20px';
       nextBtn.style.cursor = 'pointer';
-      if (!showNavControls) nextBtn.style.display = 'none';
       nextBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         showSlide(currentSlideIndex + 1);
@@ -651,6 +644,16 @@
       
       currentImages = images;
       currentVideos = videos;
+      
+      // Show/hide arrows and counter based on total slides
+      const totalSlides = Math.max(images.length, videos.length);
+      const showNavControls = totalSlides > 1;
+      const prevBtn = modal.querySelector('.rp-carousel-prev');
+      const nextBtn = modal.querySelector('.rp-carousel-next');
+      const slideCounter = modal.querySelector('.rp-slide-counter');
+      if (prevBtn) prevBtn.style.display = showNavControls ? 'block' : 'none';
+      if (nextBtn) nextBtn.style.display = showNavControls ? 'block' : 'none';
+      if (slideCounter) slideCounter.style.display = showNavControls ? 'block' : 'none';
       
       // Show/hide carousel based on media
       const carousel = modal.querySelector('.rp-carousel');
