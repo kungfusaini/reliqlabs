@@ -600,6 +600,7 @@
         tagsContainer.style.flexWrap = 'wrap';
         tagsContainer.style.gap = '8px';
         tagsContainer.style.justifyContent = 'center';
+        tagsContainer.style.marginTop = '15px';
         
         project.tech.forEach(tech => {
           const tag = document.createElement('span');
