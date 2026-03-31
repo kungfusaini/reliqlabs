@@ -534,7 +534,8 @@
         title.appendChild(titleText);
         
         // Add link icon if project has a valid link
-        if (project.link && project.link !== 'none' && project.link.trim() !== '') {
+        const linkValue = project.link;
+        if (linkValue && linkValue !== 'null' && linkValue !== 'none' && linkValue.trim() !== '') {
           const linkIcon = document.createElement('a');
           linkIcon.href = project.link;
           linkIcon.target = '_blank';
