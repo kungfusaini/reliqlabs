@@ -25,7 +25,7 @@ theme = "reliqtheme"
   
   # Plausible Analytics
   plausibleDataDomain = "reliqlabs.com"
-  plausibleScriptSource = "/stats/js/script.outbound-links.pageview-props.tagged-events.js"
+  plausibleScriptSource = "/stats/js/script.outbound-links.pageleave.pageview-props.tagged-events.js"
   
   # Features
   enableThemeToggle = false
